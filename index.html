@@ -1,0 +1,94 @@
+<style>
+html, body {
+  background: #f3f3f3;
+  margin: 0;
+}
+
+.chart-container {
+  width: 100%;
+  height: 750px;
+}
+
+iframe {
+  margin-right: 15px;
+  padding-bottom: 40px;
+  border: 1px solid #AAA;
+  border-bottom: 0;
+}
+
+.logo {
+  width: 30px;
+  margin: 3px;
+}
+
+.logo-abs {
+  position: absolute;
+}
+
+.logo2 {
+  top: 790px;
+}
+
+.logo3 {
+  top: 1580px;
+}
+</style>
+
+<img class="logo logo1" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" />
+<div id="chart-container" class="chart-container chart-left"></div>
+<div id="chart-container2" class="chart-container"></div>
+
+<img class="logo logo-abs logo2" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" />
+<div id="chart-container3" class="chart-container chart-left"></div>
+<div id="chart-container4" class="chart-container"></div>
+
+<img class="logo logo-abs logo3" src="https://s2.coinmarketcap.com/static/img/coins/64x64/7186.png" />
+<div id="chart-container5" class="chart-container chart-left"></div>
+<div id="chart-container6" class="chart-container"></div>
+
+<script type="text/javascript" src="https://static.cryptowat.ch/assets/scripts/embed.bundle.js"></script>
+<script>
+const chart1 = new cryptowatch.Embed('bitstamp', 'btcusd', {
+	timePeriod: '3d',
+  width: 920,
+  presetColorScheme: 'ballmer'
+})
+chart1.mount('#chart-container')
+
+const chart2 = new cryptowatch.Embed('bitstamp', 'btcusd', {
+	timePeriod: '4h',
+  width: 920,
+  presetColorScheme: 'ballmer'
+})
+chart2.mount('#chart-container')
+
+const chart3 = new cryptowatch.Embed('bitstamp', 'ethbtc', {
+	timePeriod: '3d',
+  width: 920,
+  presetColorScheme: 'ballmer'
+})
+chart3.mount('#chart-container')
+
+const chart4 = new cryptowatch.Embed('bitstamp', 'ethbtc', {
+	timePeriod: '4h',
+  width: 920,
+  presetColorScheme: 'ballmer'
+})
+chart4.mount('#chart-container')
+
+const chart5 = new cryptowatch.Embed('binance', 'cakebtc', {
+	timePeriod: '3d',
+  width: 920,
+  presetColorScheme: 'ballmer'
+})
+chart5.mount('#chart-container')
+
+const chart6 = new cryptowatch.Embed('binance', 'cakebtc', {
+	timePeriod: '4h',
+  width: 920,
+  presetColorScheme: 'ballmer'
+})
+chart6.mount('#chart-container')
+
+
+</script>
