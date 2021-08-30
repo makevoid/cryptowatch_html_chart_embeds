@@ -48,47 +48,47 @@ iframe {
 
 <script type="text/javascript" src="https://static.cryptowat.ch/assets/scripts/embed.bundle.js"></script>
 <script>
+const theme = 'ballmer'
+	
 const chart1 = new cryptowatch.Embed('bitstamp', 'btcusd', {
 	timePeriod: '3d',
   width: 920,
-  presetColorScheme: 'ballmer'
+  presetColorScheme: theme
 })
 chart1.mount('#chart-container')
 
 const chart2 = new cryptowatch.Embed('bitstamp', 'btcusd', {
 	timePeriod: '4h',
   width: 920,
-  presetColorScheme: 'ballmer'
+  presetColorScheme: theme
 })
 chart2.mount('#chart-container')
 
 const chart3 = new cryptowatch.Embed('bitstamp', 'ethbtc', {
 	timePeriod: '3d',
   width: 920,
-  presetColorScheme: 'ballmer'
+  presetColorScheme: theme
 })
 chart3.mount('#chart-container')
 
 const chart4 = new cryptowatch.Embed('bitstamp', 'ethbtc', {
 	timePeriod: '4h',
   width: 920,
-  presetColorScheme: 'ballmer'
+  presetColorScheme: theme
 })
 chart4.mount('#chart-container')
 
 const chart5 = new cryptowatch.Embed('binance', 'cakebtc', {
 	timePeriod: '3d',
   width: 920,
-  presetColorScheme: 'ballmer'
+  presetColorScheme: theme
 })
 chart5.mount('#chart-container')
 
 const chart6 = new cryptowatch.Embed('binance', 'cakebtc', {
 	timePeriod: '4h',
   width: 920,
-  presetColorScheme: 'ballmer'
+  presetColorScheme: theme
 })
 chart6.mount('#chart-container')
-
-
 </script>
